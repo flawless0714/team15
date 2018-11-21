@@ -40,7 +40,7 @@ float inner4(double *u, double *v, long length)
     printf("For %ld-Dimensional Vector Dot Product. Cycle = %f\n", length, cyc);
     printf("CPE = %f\n", CPE);
     
-    return CPE;    
+    return cyc;    
 }
 
 
@@ -67,7 +67,7 @@ int main(){
             free(v);
         }
         total_cycle = total_cycle/eachTimes;
-        fprintf(f,"%llu   %lu\n", total_cycle, i);
+        fprintf(f,"%lu %llu\n", i, total_cycle);
     }
     fclose(f);
 
